@@ -1,6 +1,6 @@
 # soshito · Portfólio (versão estática)
 
-Site portfólio de **João Victor (soshito)** — interface inspirada em game UI estilo Persona 5, totalmente em HTML/CSS/JS puro. Pronto para abrir, editar no VS Code e publicar onde quiser.
+Site portfólio de **João Victor (soshito)** — interface inspirada em game UI estilo Persona 5, totalmente em HTML/CSS/JS puro.
 
 ## 📦 Arquivos
 
@@ -27,34 +27,6 @@ npx serve .
 python3 -m http.server 8080
 ```
 
-## 🚀 Como hospedar
-
-Funciona em qualquer hospedagem estática:
-
-- **Vercel** → `vercel deploy`
-- **Netlify** → arraste a pasta em https://app.netlify.com/drop
-- **GitHub Pages** → suba o repo e ative Pages
-- **Cloudflare Pages**, **Render**, **Hostinger**, **HostGator**, etc.
-
-## 🛠️ O que editar
-
-| Quer mudar... | Vá em... |
-|---|---|
-| Textos do hero | `index.html` → seção `<section id="hero">` |
-| Bio do Sobre | `index.html` → seção `<section id="profile">` |
-| Lista de serviços | `script.js` → constante `const skills = [...]` |
-| Cards de projetos | `script.js` → constante `const missions = [...]` |
-| Imagens da galeria | substitua arquivos em `assets/images/mockup-*.jpg` |
-| Imagem do personagem | substitua `assets/images/character-soshito.png` |
-| WhatsApp | `script.js` → constante `WHATSAPP` (linha 2) e também no `index.html` |
-| GitHub | `index.html` → procure `github.com/jvctorr` |
-| Discord | `index.html` → procure `Hitorishh` e em `script.js` → `copyDiscord` |
-| E-mail | `index.html` → procure `Jvictor76900@gmail.com` |
-| Paleta de cores | `style.css` → bloco `:root` (variáveis `--blood`, `--ink`, etc.) |
-| Fontes | `index.html` → `<link>` do Google Fonts + `style.css` |
-| Perguntas do Quiz | `script.js` → constante `const quiz = [...]` |
-| Estilos do Style Select | `script.js` → constante `const styles = [...]` |
-
 ## ⌨️ Atalhos de teclado
 
 | Tecla | Ação |
@@ -80,21 +52,6 @@ Funciona em qualquer hospedagem estática:
 - ✅ Quiz de 5 perguntas com diagnóstico e envio pro WhatsApp
 - ✅ Contato com WhatsApp / GitHub / Discord (copia) / E-mail
 - ✅ Totalmente responsivo
-
-## 📁 Estrutura recomendada para expandir
-
-Se quiser separar mais assets:
-
-```
-assets/
-  images/      ← fotos, mockups, banners
-  videos/      ← vídeos curtos / VSL
-  icons/       ← ícones SVG
-  characters/  ← variações do personagem
-  mockups/     ← mockups extras
-  textures/    ← texturas / overlays
-  animations/  ← lottie / vídeos curtos
-```
 
 ## 📞 Contato
 
