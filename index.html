@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>soshito — João Victor | Web Design & Front-end</title>
+<meta name="description" content="Portfólio de João Victor (soshito): sites, landing pages e experiências digitais com foco em conversão." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Bebas+Neue&family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+  <div class="pre-bar-top"></div><div class="pre-bar-bottom"></div>
+  <div class="pre-inner">
+    <div class="row">
+      <span class="tag tag-red">SYSTEM</span>
+      <span class="mono dim">SOSHITO.EXE</span>
+    </div>
+    <h1 class="display giant">SO<span class="red">SHITO</span></h1>
+    <ul class="mono log">
+      <li><span>&gt; Loading creative system...</span><span class="red" id="pct">0%</span></li>
+      <li><span>&gt; Design mode</span><span class="chip">ON</span></li>
+      <li><span>&gt; Conversion mode</span><span class="chip">ON</span></li>
+      <li><span>&gt; Portfolio loaded</span><span class="chip-white" id="okchip">...</span></li>
+    </ul>
+    <div class="progress"><div class="bar" id="bar"></div></div>
+    <div class="row between">
+      <span class="mono tiny dim">v1.0 · build 2026</span>
+      <button id="startBtn" class="btn-blood clip-tab giant-btn" disabled>▶ PRESS START</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HUD ============ -->
+<header id="hud" class="hidden">
+  <div class="hud-row">
+    <div class="row">
+      <span class="tag tag-red">SOSHITO</span>
+      <span class="mono tiny dim">/ portfolio.exe</span>
+    </div>
+    <nav class="hud-nav">
+      <button data-go="hero">Início</button>
+      <button data-go="profile">Sobre</button>
+      <button data-go="skills">Serviços</button>
+      <button data-go="missions">Projetos</button>
+      <button data-go="system">Sistemas</button>
+      <button data-go="quiz">Quiz</button>
+      <button data-go="contact">Contato</button>
+    </nav>
+    <div class="row">
+      <button id="langBtn" class="mini">PT</button>
+      <button id="themeBtn" class="mini">DARK</button>
+      <button id="menuBtn" class="btn-blood mini">≡ MENU</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ QUICK MENU ============ -->
+<div id="quickMenu" class="overlay hidden">
+  <div class="menu-box">
+    <span class="tag tag-white">▌ PAUSE / MENU</span>
+    <ul id="menuList"></ul>
+    <p class="mono tiny dim center">ESC para fechar · M para alternar</p>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main id="site" class="hidden">
+
+<!-- HERO -->
+<section id="hero" class="sec hero">
+  <div class="hero-red"></div>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="row wrap">
+        <span class="tag tag-white">▌ START SCREEN</span>
+        <span class="tag tag-red bordered">LV. 21</span>
+        <span class="mono tiny dim">/ web designer · front-end · creator</span>
+      </div>
+      <h1 class="impact mega">
+        EU CRIO<br/>
+        <span class="bg-white-blk shadow-blood">SITES</span><br/>
+        IMPOSSÍVEIS<br/>
+        DE <span class="stroke-red">IGNORAR</span>.
+      </h1>
+      <p class="lead">Design estratégico, front-end e marketing para transformar visitantes em clientes.</p>
+      <p class="muted">Sites, landing pages, interfaces e experiências digitais para marcas que precisam parecer profissionais, vender melhor e fugir do comum.</p>
+      <div class="row wrap gap">
+        <a class="btn-blood clip-tab" href="https://wa.me/5585986301108" target="_blank">▶ START PROJECT</a>
+        <button class="btn-white clip-tab-l" data-go="missions">Ver Projetos</button>
+        <a class="btn-outline" href="https://github.com/jvctorr" target="_blank">GITHUB ↗</a>
+      </div>
+      <div class="hud-stats">
+        <span><b>Web Design</b><i>ON</i></span>
+        <span><b>Front-end</b><i>ON</i></span>
+        <span><b>Marketing</b><i>ON</i></span>
+        <span><b>Conversion</b><i>ON</i></span>
+        <span><b>Disponível</b><i>SIM</i></span>
+      </div>
+    </div>
+    <div class="hero-char">
+      <div class="char-frame"></div>
+      <img src="assets/images/character-soshito.png" alt="soshito" />
+      <div class="char-name">SOSHITO</div>
+      <span class="push-btn">PUSH ◯ BUTTON</span>
+    </div>
+  </div>
+  <div class="scroll-hint mono tiny">▼ SCROLL TO CONTINUE ▼</div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="sec dark-sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ PROFILE · 01</span><h2 class="impact big">JOÃO VICTOR</h2><span class="mono dim">/ aka soshito · LV 21</span></header>
+    <div class="grid-2">
+      <div class="char-card">
+        <div class="card-bg"></div>
+        <div class="card-inner">
+          <img src="assets/images/character-soshito.png" alt="profile">
+          <div class="info-grid">
+            <div><span>ALIAS</span><b>soshito</b></div>
+            <div><span>LV</span><b>21</b></div>
+            <div><span>BORN</span><b>2005</b></div>
+            <div><span>CLASS</span><b>Web Designer</b></div>
+            <div><span>SPEC</span><b>Front-end</b></div>
+            <div><span>AREA</span><b>Brasil</b></div>
+          </div>
+        </div>
+        <span class="card-label">CHARACTER</span>
+      </div>
+      <div>
+        <div class="bio-card">
+          <p>Tenho <b>21 anos</b>, estudo web design e programação desde os <b>15</b> e comecei cedo como freelancer. Hoje uno <b>design, front-end, marketing, copy, edição de vídeo</b> e estratégia para criar sites que <b>representam, convencem e vendem</b>.</p>
+        </div>
+        <div class="bars" id="bars"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ SKILLS · 02</span><h2 class="impact big">SKILL MENU</h2><span class="mono dim">/ O que eu faço pelo seu negócio</span></header>
+    <div class="grid-2">
+      <ul id="skillList" class="skill-list"></ul>
+      <div id="skillDetail" class="skill-detail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TUTORIAL -->
+<section class="sec tutorial">
+  <div class="container">
+    <div class="row wrap">
+      <span class="display tag-display">TUTORIAL</span>
+      <span class="tag tag-red bordered">L1</span>
+      <span class="impact mid">/ por que sua empresa precisa de um site?</span>
+    </div>
+    <p class="lead muted">Seu cliente decide se confia em você antes mesmo de chamar. Um site profissional aumenta autoridade, explica sua oferta e transforma visitantes em contatos mais qualificados.</p>
+    <div class="tut-box">
+      <ul>
+        <li class="sel"><i></i><b>Credibilidade</b><span>Site profissional = confiança imediata.</span><em>▶</em></li>
+        <li><i></i><b>Clareza</b><span>Sua oferta entendida em segundos.</span><em>▶</em></li>
+        <li><i></i><b>Autoridade</b><span>Você parece referência no seu nicho.</span><em>▶</em></li>
+        <li><i></i><b>Conversão</b><span>Visitantes viram contatos qualificados.</span><em>▶</em></li>
+        <li><i></i><b>Diferenciação</b><span>Você sai do mar de empresas iguais.</span><em>▶</em></li>
+        <li><i></i><b>WhatsApp Qualificado</b><span>Quem chama já entendeu sua oferta.</span><em>▶</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MISSIONS -->
+<section id="missions" class="sec dark-sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ MISSIONS · 03</span><h2 class="impact big">MISSIONS</h2><span class="mono dim">/ Escolha um tipo de projeto</span></header>
+    <div id="missionGrid" class="mission-grid"></div>
+  </div>
+</section>
+
+<!-- STYLE -->
+<section id="style" class="sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ STYLE · 04</span><h2 class="impact big">STYLE SELECT</h2><span class="mono dim">/ Direção visual</span></header>
+    <div id="styleTabs" class="style-tabs"></div>
+    <div id="stylePreview" class="style-preview"></div>
+  </div>
+</section>
+
+<!-- SYSTEM -->
+<section id="system" class="sec dark-sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ SYSTEM · 05</span><h2 class="impact big">SYSTEM MENU</h2><span class="mono dim">/ Funcionalidades demo</span></header>
+    <div id="sysTabs" class="sys-tabs"></div>
+    <div id="sysPanel" class="sys-panel"></div>
+    <p class="mono tiny dim">▌ Demonstrações. Seu site pode ter login real, banco de dados, pagamentos, catálogo, agendamento, IA, dashboard e integrações.</p>
+  </div>
+</section>
+
+<!-- ROUTE -->
+<section class="sec">
+  <div class="container">
+    <header class="sec-head"><span class="tag tag-white">▌ ROUTE · 06</span><h2 class="impact big">ROUTE MAP</h2><span class="mono dim">/ Como sai um projeto comigo</span></header>
+    <div class="route" id="route"></div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="sec dark-sec">
+  <div class="container narrow">
+    <header class="sec-head"><span class="tag tag-white">▌ DIAGNOSIS · 07</span><h2 class="impact big">DIAGNOSIS GAME</h2><span class="mono dim">/ Descubra o site que sua empresa precisa</span></header>
+    <div class="quiz-box" id="quizBox"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec contact-sec">
+  <div class="container narrow">
+    <header class="sec-head invert"><span class="tag tag-white">▌ CONTACT · 08</span><h2 class="impact big">CONTACT SCREEN</h2><span class="mono">/ Bora criar algo memorável?</span></header>
+    <div class="contact-grid">
+      <a class="ct-card white" href="https://wa.me/5585986301108" target="_blank"><div><div class="mono tiny dim">WHATSAPP</div><div class="impact mid">+55 85 98630-1108</div><div class="mono tiny">Resposta rápida</div></div><span class="big-arrow">▶</span></a>
+      <a class="ct-card black" href="https://github.com/jvctorr" target="_blank"><div><div class="mono tiny dim">GITHUB</div><div class="impact mid">jvctorr</div><div class="mono tiny">Código & repositórios</div></div><span class="big-arrow">↗</span></a>
+      <button class="ct-card black" id="copyDiscord"><div><div class="mono tiny dim">DISCORD</div><div class="impact mid">Hitorishh</div><div class="mono tiny" id="dcMsg">Clique para copiar</div></div><span class="big-arrow">⧉</span></button>
+      <a class="ct-card white" href="mailto:Jvictor76900@gmail.com"><div><div class="mono tiny dim">E-MAIL</div><div class="impact mid">Jvictor76900@gmail.com</div><div class="mono tiny">Projetos detalhados</div></div><span class="big-arrow">✉</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 · Site criado por <b>soshito</b> · João Victor</footer>
+</main>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+<div id="toast" class="hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
